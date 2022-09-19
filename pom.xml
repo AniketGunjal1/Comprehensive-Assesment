@@ -45,8 +45,9 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		
 		<finalName>hospital-doctors-data</finalName>
+		
+		
 	</build>
 
 </project>

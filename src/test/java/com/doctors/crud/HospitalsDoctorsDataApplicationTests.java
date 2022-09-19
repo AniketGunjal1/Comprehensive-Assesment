@@ -1,4 +1,4 @@
-package com.doctors;
+package com.doctors.crud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
