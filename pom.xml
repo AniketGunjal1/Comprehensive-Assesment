@@ -41,10 +41,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-maven-plugin -->
+<dependency>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-maven-plugin</artifactId>
+    <version>0.2.0</version>
+</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
+		
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
