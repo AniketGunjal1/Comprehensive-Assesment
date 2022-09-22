@@ -1,29 +1,26 @@
 version: "3"
 services:
-  
- 
   springboot-app:
-    container_name: hospital-doctor-data
+    #container_name: hospital-doctor-data
     image: springboot-hospital-data-app
-    #restart: always 
+    restart: always 
     
     
     build: .
     ports:
-      - 9111:9111
-      
+      - 9111-9117:9111
     depends_on:
       - mysqldb  
       
     environment: 
-      MYSQL_HOST: mysqldb 
+      MYSQL_HOST: doctordb 
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_PASSWORD: 
       MYSQL_PORT: 3306
       
       
       
-      
+        
   mysqldb:
     container_name: mysqldb 
     image: mysql
@@ -35,4 +32,6 @@ services:
     environment:
       MYSQL_DATABASE: doctordb
       MYSQL_ROOT_PASSWORD: root
+      
+
     
