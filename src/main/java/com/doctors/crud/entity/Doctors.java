@@ -12,7 +12,6 @@ public class Doctors {
 	
 	
 	@Id
-	@GeneratedValue
 	private int id;
 	private String name;
 	private int salary;

@@ -35,6 +35,8 @@
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
+    <version>8.0.29</version><!--$NO-MVN-MAN-VER$-->
     </dependency>
 
 		<dependency>
@@ -47,6 +49,11 @@
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-maven-plugin</artifactId>
     <version>0.2.0</version>
+</dependency>
+<dependency>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>msal4j</artifactId>
+    <version>1.9.1</version>
 </dependency>
 	</dependencies>
 
